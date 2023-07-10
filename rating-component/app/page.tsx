@@ -11,11 +11,18 @@ export default function Home() {
 
   useEffect(() => {}, []);
 
-  const submitRating = (e: any) => {
+  const handleSetRating = (e: any) => {
     e.preventDefault();
 
     const target = e.target as HTMLButtonElement;
     setSelectedRating(Number(target.value));
+  };
+
+  const handleSubmitRating = (e: any) => {
+    e.preventDefault();
+
+    if (selectedRating === undefined) return;
+
     setSubmitted(true);
   };
   return (
@@ -49,7 +56,7 @@ export default function Home() {
                     className="flex items-center justify-center w-10 h-10"
                   >
                     <button
-                      onClick={(e) => submitRating(e)}
+                      onClick={(e) => handleSetRating(e)}
                       className="focus:bg-[color:var(--Orange)] rounded-full w-full h-full bg-[color:var(--DarkBlue)] hover:bg-[color:var(--LightGrey)]  text-[color:var(--LightGrey)] hover:text-[color:var(--White)] focus:text-[color:var(--White)]"
                       value={i}
                     >
@@ -60,7 +67,10 @@ export default function Home() {
               })}
             </div>
             <div className="mt-5 pl-5 mb-5">
-              <button className="bg-[color:var(--Orange)] hover:bg-[color:var(--White)] uppercase text-[color:var(--White)] hover:text-[color:var(--Orange)]  rounded-2xl h-9 w-[308px] ">
+              <button
+                onClick={(e) => handleSubmitRating(e)}
+                className="bg-[color:var(--Orange)] hover:bg-[color:var(--White)] uppercase text-[color:var(--White)] hover:text-[color:var(--Orange)]  rounded-2xl h-9 w-[308px] "
+              >
                 submit
               </button>
             </div>
@@ -70,7 +80,7 @@ export default function Home() {
             <div className="">
               <Image
                 src="/illustration-thank-you.svg"
-                alt="rating star"
+                alt="thank you"
                 width={120}
                 height={120}
                 priority
