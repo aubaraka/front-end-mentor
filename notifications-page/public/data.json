@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "user": "Mark Webber",
+    "messageType": "react",
+    "message": "My first tournament today!",
+    "read": false,
+    "date": "1m ago"
+  },
+  {
+    "id": 2,
+    "user": "Angela Gray",
+    "messageType": "follow",
+    "message": "",
+    "read": false,
+    "date": "5m ago"
+  },
+  {
+    "id": 3,
+    "user": "Jacob Thompson",
+    "messageType": "join",
+    "message": "Chess Club",
+    "read": false,
+    "date": "1 day ago"
+  },
+  {
+    "id": 4,
+    "user": "Rizky Hasanuddin",
+    "messageType": "message",
+    "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    "read": true,
+    "date": "5 days ago"
+  },
+  {
+    "id": 5,
+    "user": "Kimberly Smith",
+    "messageType": "comment",
+    "message": "",
+    "read": true,
+    "date": "1 week ago"
+  },
+  {
+    "id": 6,
+    "user": "Nathan Peterson",
+    "messageType": "react",
+    "message": "5 end-game strategies to increase your win rate",
+    "read": true,
+    "date": "2 weeks ago"
+  },
+  {
+    "id": 7,
+    "user": "Anna Kim",
+    "messageType": "left",
+    "message": "Chess Club",
+    "read": true,
+    "date": "2 weeks ago"
+  }
+]

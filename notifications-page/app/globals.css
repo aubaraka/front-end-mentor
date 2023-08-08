@@ -1,0 +1,24 @@
+@import url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --VerylightGrayishBlue: hsl(210, 60%, 98%);
+  --LightGrayishBlue1: hsl(211, 68%, 94%);
+  --LightGrayishBlue2: hsl(205, 33%, 90%);
+  --GrayishBlue: hsl(219, 14%, 63%);
+  --DarkGrayishBlue: hsl(219, 12%, 42%);
+  --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--VerylightGrayishBlue);
+  font-weight: "600";
+  color: var(--DarkGrayishBlue);
+}
